@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@antfu", // @antfu/eslint-config-ts
+    "plugin:astro/recommended",
+  ],
+  "rules": {
+    "astro/semi": ["error", "never"],
+    "astro/no-set-text-directive": "error",
+    "astro/prefer-class-list-directive": "error",
+    "astro/prefer-object-class-list": "error"
+  }
+}
