@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import { ImageComparison } from '~/components/ImageComparison'
+import left from '~/assets/comparison/7_1.png'
+import right from '~/assets/comparison/14_1.png'
+---
+
+<div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl sm:text-center lg:(mx-0 max-w-none h-xl)">
+      <p class="mt-2 text-3xl font-semibold tracking-tight text-light-100 sm:text-4xl">Can you spot the difference?</p>
+      <ImageComparison client:visible>
+        <Image class="h-full w-auto object-cover object-left" slot="leftImage" src={ left } alt="Shot on iPhone 7" />
+        <Image class="h-full w-auto object-cover object-right" slot="rightImage" src={ right } alt="Shot on iPhone 14 Pro" />
+      </ImageComparison>
+    </div>
+  </div>
+</div>
