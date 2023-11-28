@@ -22,7 +22,7 @@ export const MobileNav: Component<MobileNavProps> = (props) => {
         <Dialog.Positioner>
           <Dialog.Content class="group">
             <div class="absolute inset-0 min-h-full origin-top-right transform p-2 transition lg:hidden">
-              <div class="h-full flex flex-col justify-between divide-y-2 divide-warm-gray-700 divide-opacity-20 rounded-lg bg-warm-gray-800 ring-1 ring-dark-50 ring-opacity-60">
+              <div class="h-full flex flex-col justify-between divide-y-2 divide-warm-gray-700 divide-opacity-20 rounded-lg bg-dark-800 ring-1 ring-dark-50 ring-opacity-60">
                 <div class="px-5 pt-5 pb-6">
                   <Dialog.Title asChild>
                     <span class="sr-only">Mobile nav menu</span>
@@ -35,7 +35,7 @@ export const MobileNav: Component<MobileNavProps> = (props) => {
 
                     <Dialog.CloseTrigger asChild>
                       <div class="-mr-2">
-                        <button type="button" class="inline-flex items-center justify-center rounded-md bg-warm-gray-800 p-2 text-warm-gray-200 hover:bg-warm-gray-700 hover:text-light-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
+                        <button type="button" class="inline-flex items-center justify-center rounded-md bg-dark-800 p-2 text-warm-gray-200 hover:bg-dark-300 hover:text-light-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500">
                           <span class="sr-only">Close menu</span>
                           <span class="i-tabler-x wh-6" />
                         </button>
@@ -45,21 +45,21 @@ export const MobileNav: Component<MobileNavProps> = (props) => {
                   </div>
                   <div class="mt-6">
                     <nav class="grid gap-6">
-                      <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-warm-gray-700">
+                      <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-dark-300">
                         <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-amber-500 text-white">
                           <span class="i-tabler-message-circle-2 wh-6" />
                         </div>
                         <div class="ml-4 text-base tracking-wide font-medium text-light-100">For professionals</div>
                       </a>
 
-                      <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-warm-gray-700">
+                      <a href="https://e3stpavel.github.io/learngraphy-landing/" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-dark-300">
                         <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-amber-500 text-white">
                           <span class="i-tabler-brand-github wh-6" />
                         </div>
                         <div class="ml-4 text-base tracking-wide font-medium text-light-100">Contribute</div>
                       </a>
 
-                      <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-warm-gray-700">
+                      <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-dark-300">
                         <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-amber-500 text-white">
                           <span class="i-tabler-target-arrow wh-6" />
                         </div>
