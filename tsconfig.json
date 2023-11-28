@@ -3,7 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "baseUrl": "C:/Users/mayor/Downloads/lnae",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*"
