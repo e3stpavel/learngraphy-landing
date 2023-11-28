@@ -1,8 +1,33 @@
 ---
+import { Image } from 'astro:assets'
+import noise from '../assets/noise.jpg'
 import EmptyLayout from '~/layouts/Empty.astro'
+import Header from '~/components/Header.astro'
+import Hero from '~/components/Hero.astro'
+import Problem from '~/components/Problem.astro'
+import Solution from '~/components/Solution.astro'
+import SolutionTestimonial from '~/components/SolutionTestimonial.astro'
 ---
 
 <EmptyLayout>
   <title slot="head">Astro</title>
-  <h1 class="text-red-500 text-2xl font-bold">Astro</h1>
+
+  <div class="isolate absolute inset-0 -z-10 overflow-hidden mix-blend-color-dodge">
+    <!-- <video
+      class="h-full w-full object-cover"
+      autoplay muted loop playsinline
+    >
+      <source src="https://1static.vecteezy.com/system/resources/previews/021/890/079/film-scratches-overlay-video.webm" type="video/webm;" />
+      <Image src={ noise } alt="Video not supported" />
+    </video> -->
+    <Image class="w-full h-auto object-cover" src={ noise } alt="" />
+  </div>
+
+  {/* Header */}
+  <Header />
+  <Hero />
+  <Problem />
+  <Solution />
+  <SolutionTestimonial />
+
 </EmptyLayout>

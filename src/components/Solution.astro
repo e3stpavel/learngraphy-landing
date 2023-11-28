@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets'
+import maskot from '~/assets/maskot.svg'
+---
+
+<div class="overflow-hidden py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="lg:ml-auto lg:pt-4 lg:pl-4">
+        <div class="lg:max-w-lg">
+          <h2 class="text-lg font-semibold leading-8 tracking-tight text-amber-500">Our Solution</h2>
+          <p class="mt-2 text-3xl text-balance font-semibold tracking-tight text-light-100 sm:text-4xl">Introducing your next AR AI Copilot</p>
+          <p class="mt-6 text-lg tracking-wide leading-8 text-gray-300">He is smart assistant that helps you improve your camera skills in real time. He analyzes your scene, detects your errors, and gives you instant feedback and tips on how to fix them. Whether you want to adjust the exposure, focus, composition, or lighting, the copilot will guide you through the process and help you capture the perfect shot.</p>
+          <dl class="mt-10 max-w-xl space-y-8 text-base tracking-wide leading-7 text-gray-400 lg:max-w-none">
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-light-100">
+                <span class="i-tabler-clock-hour-4 absolute top-1 left-1 h-5 w-5 text-amber-500" />
+                Real-time issues.
+              </dt>
+              <dd class="inline">Learn by doing, not by reading or watching. Practice your camera skills anytime, anywhere, and get immediate feedback and guidance.</dd>
+            </div>
+
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-light-100">
+                <span class="i-tabler-chart-arrows-vertical absolute top-1 left-1 h-5 w-5 text-amber-500" />
+                Adapts to your level.
+              </dt>
+              <dd class="inline">He adapts to your skill level, preferences, and goals. He can help you with basic concepts like exposure, focus, and composition, or advanced topics like lighting, color, and effects.</dd>
+            </div>
+
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-light-100">
+                <span class="i-tabler-regex absolute top-1 left-1 h-5 w-5 text-amber-500" />
+                Tells you how, not what to shoot.
+              </dt>
+              <dd class="inline">He respects your artistic vision and style, and helps you express it more effectively. You can always override its suggestions and experiment with your own ideas.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="flex items-start justify-end lg:order-first">
+        <Image class="w-3xl max-w-none sm:w-2xl" width="2432" height="1442" src={ maskot } alt="Maskot" />
+        <!-- <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442"> -->
+      </div>
+    </div>
+  </div>
+</div>

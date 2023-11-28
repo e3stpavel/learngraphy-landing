@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets'
+import { MobileNav } from './MobileNav'
+import logotype from '~/assets/Logotype_White.svg'
+import logomark from '~/assets/Logomark_White.svg'
+---
+
+<div class="relative">
+  <div class="flex items-center justify-between p-4 md:(px-10 py-8) lg:(justify-start space-x-10)">
+    <div>
+      <a href="#" class="flex">
+        <span class="sr-only">Learngraphy</span>
+        <Image class="h-16 w-auto sm:hidden" src={ logomark } alt="Wordmark" />
+        <Image class="hidden h-14 w-auto sm:block" src={ logotype } alt="Logotype" />
+      </a>
+    </div>
+
+    <MobileNav client:visible>
+      <Image slot="logo" class="w-auto h-16" src={ logomark } alt="Workmark" />
+    </MobileNav>
+
+    <div class="hidden lg:(flex flex-1 items-center justify-between space-x-8)">
+      <nav class="flex space-x-10 children:(text-sm font-semibold text-light-100 hover:text-warm-gray-600)">
+        <a href="#" class="hover:text-white">For professionals</a>
+        <a href="#" class="hover:text-white">Contribute</a>
+        <a href="#" class="hover:text-white">About us</a>
+      </nav>
+      <div class="flex items-center">
+        <a href="#" class="inline-flex items-center justify-center rounded-md border border-light-600 border-opacity-60 bg-light-100 px-4 py-2 text-sm font-semibold text-black hover:bg-light-950">Download now</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -28,6 +28,7 @@ export default defineConfig({
     },
     fontFamily: {
       sans: `'Pretendard Std Variable','Pretendard Std','Pretendard',${theme.fontFamily.sans}`,
+      serif: `'Inkverse',${theme.fontFamily.serif}`,
     },
   },
 

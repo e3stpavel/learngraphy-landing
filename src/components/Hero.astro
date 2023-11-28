@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets'
+import mockup from '~/assets/mockup.png'
+---
+
+<main>
+  <div class="relative py-24 sm:py-32 lg:pb-40">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+        <path fill="url(#f4773080-2a16-4ab4-9fd7-579fec69a4f7)" fill-opacity=".2" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+        <defs>
+          <linearGradient id="f4773080-2a16-4ab4-9fd7-579fec69a4f7" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#facc15"></stop>
+            <stop offset="1" stop-color="#dc2626"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="relative rounded-full py-1 px-3 text-sm leading-6 tracking-wide text-true-gray-400 ring-1 ring-light-100/10 hover:ring-white/20">
+            Announcing our first pitch of business idea. <a href="#" class="font-semibold text-light-100"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <h1 class="text-4xl font-semibold tracking-tight text-balance text-light-100 sm:text-6xl">Get even more with your phone camera</h1>
+        <p class="mt-6 text-lg tracking-wide text-balance leading-8 text-gray-300">Unleash your next passion without spending neither your time nor money. Just use your phone to capture more, capture better.</p>
+        <div class="mt-10 flex flex-col items-center space-y-3 sm:(flex-row justify-center space-y-none space-x-3)">
+          <a href="#" class="w-full sm:w-auto flex items-center justify-center rounded-lg border border-light-800 border-opacity-60 bg-light-100 px-4 py-2 text-base leading-relaxed font-semibold text-black hover:bg-light-950 focus-visible:(outline outline-2 outline-offset-2 outline-light-400)">
+            Download for
+            <span class="i-bxl-apple text-xl ml-0.5 mb-0.5" aria-hidden="true" />
+          </a>
+          <a href="#" class="w-full sm:w-auto flex items-center justify-center rounded-lg border border-light-800 border-opacity-60 bg-light-100 px-4 py-2 text-base leading-relaxed font-semibold text-black hover:bg-light-950 focus-visible:(outline outline-2 outline-offset-2 outline-light-400)">
+            Download for
+            <span class="i-bxl-android text-xl ml-0.5 mb-0.5" aria-hidden="true" />
+          </a>
+          <!-- <a href="#" class="rounded-lg border border-light-800 border-opacity-60 bg-light-100 px-4 py-2 text-base leading-relaxed font-semibold text-black hover:bg-light-950 focus-visible:(outline outline-2 outline-offset-2 outline-light-400)">Download now</a> -->
+          <!-- <a href="#" class="text-base font-semibold leading-relaxed text-light-100">Learn more <span aria-hidden="true">→</span></a> -->
+        </div>
+      </div>
+      <Image class="mt-16 rounded-md saturate-120 brightness-80 sm:mt-24" src={ mockup } width="2432" height="1442" alt="App screenshot" />
+      <!-- <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24"> -->
+    </div>
+
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+        <path fill="url(#ee0717bf-3e43-49df-b1bd-de36422ed3d3)" fill-opacity=".2" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+        <defs>
+          <linearGradient id="ee0717bf-3e43-49df-b1bd-de36422ed3d3" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#f87171"></stop>
+            <stop offset="1" stop-color="#f59e0b"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</main>
