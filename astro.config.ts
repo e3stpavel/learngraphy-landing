@@ -12,4 +12,7 @@ export default defineConfig({
     }),
     solidJs(),
   ],
+
+  site: 'https://e3stpavel.github.io',
+  base: '/learngraphy-landing',
 })
