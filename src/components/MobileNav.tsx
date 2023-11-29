@@ -21,7 +21,7 @@ export const MobileNav: Component<MobileNavProps> = (props) => {
       <Portal>
         <Dialog.Positioner>
           <Dialog.Content class="group">
-            <div class="absolute inset-0 min-h-full origin-top-right transform p-2 transition lg:hidden">
+            <div class="absolute inset-0 max-h-[100svh] origin-top-right transform p-2 transition lg:hidden">
               <div class="h-full flex flex-col justify-between divide-y-2 divide-warm-gray-700 divide-opacity-20 rounded-lg bg-dark-800 ring-1 ring-dark-50 ring-opacity-60">
                 <div class="px-5 pt-5 pb-6">
                   <Dialog.Title asChild>
